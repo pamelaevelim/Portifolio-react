@@ -46,7 +46,7 @@
   }
   
   .dark-mode .tela1 {
-    background-image: url(imagens/bg.png);
+    background-image: url('/imagens/bg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -474,7 +474,7 @@
   }
   
   .dark-mode .tela4 {
-    background-image: url(imagens/bg2.png);
+    background-image: url('/imagens/bg2.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
