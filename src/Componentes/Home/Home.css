@@ -593,7 +593,7 @@
   }
   
   .dark-mode .tela5 {
-    background-image: url(imagens/bg.png);
+    background-image: url('/imagens/bg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
