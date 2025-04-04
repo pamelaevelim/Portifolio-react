@@ -118,7 +118,7 @@ const parent = {
             </div>
             <div className="linha1">
                     <div className="projetos">
-                        <img className="exibicao" src='public/imagens/cep.png'/>
+                        <img className="exibicao" src='imagens/cep.png'/>
                         <div>
                         <button className="abrir-projeto" onClick={(event) => AbrirProjeto(event, '/cep')}><strong>API Via Cep</strong></button>
                         <motion.button variants={parent} 
@@ -141,7 +141,7 @@ const parent = {
                         <p>Cadastro de Usuário com validação em tempo real do cep.</p>
                     </div>
                 <div className="projetos">
-                    <img src='public/imagens/login.png' className="exibicao"/>
+                    <img src='imagens/login.png' className="exibicao"/>
                     <div>
                     <button className="abrir-projeto" onClick={(event) => AbrirProjeto(event, '/login')}><strong>Login Page</strong></button>
                         <motion.button variants={parent} 
