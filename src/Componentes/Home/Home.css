@@ -474,7 +474,7 @@
   }
   
   .dark-mode .tela4 {
-    background-image: url '/imagens/bg2.png';
+    background-image: url ('imagens/bg2.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
