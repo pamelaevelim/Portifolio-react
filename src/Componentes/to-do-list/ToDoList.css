@@ -12,7 +12,7 @@
   .imagem-fundo {
     width: 100vw;
     height: 88vh;
-    background-image: url(imagens/bgtodolist.jpg);
+    background-image: url('/imagens/bgtodolist.jpg');
     background-size: cover;
   }
   
