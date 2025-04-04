@@ -58,7 +58,7 @@ export function Login() {
     return (
         <>
         <header className='header'>
-            <img src="public/imagens/logo.svg" alt="Logo" />
+            <img src="imagens/logo.svg" alt="Logo" />
         </header>
         <button className='Home' onClick={inicio}><Home size={15}/></button>
         <div id="Container">
