@@ -54,18 +54,18 @@ const parent = {
     window.open(url, "_blank")
   }
  
-  return (
+  return ( 
     <div className="Projeto">
-        <div id='home' className="tela1"> 
         <nav>
         <motion.a variants={parent} initial="variantA" whileHover="variantB" href="#contato">Redes</motion.a>
         <motion.a variants={parent} initial="variantA" whileHover="variantB" href="#projetos">Projetos</motion.a>
         <motion.a variants={parent} initial="variantA" whileHover="variantB" href="#serviços">Serviços</motion.a>
         <motion.a variants={parent} initial="variantA" whileHover="variantB" href="#form">Contato</motion.a>
       <motion.button variants={parent} initial="variantA" whileHover="variantB" className='tema' onClick={() => setIsDarkMode(!isDarkMode)}>
-      {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
+      {isDarkMode ? <Sun size={20} className='dark-ligth'/> : <Moon size={20} />}
       </motion.button>
       </nav>
+      <div id='home' className="tela1"> 
             <img className="perfil" src="imagens/perfil.png" alt="Perfil"/>
             <div className="apresentacao">
               <p className="ola">
@@ -80,27 +80,27 @@ const parent = {
             </div>
             <div className="barraIcones">
                 <div className="icones">
-                    <img className="GitHub" src="imagens/GitHub.svg" alt="GitHub"/>
+                    <img id='imagem-icones' className="GitHub" src="imagens/GitHub.svg" alt="GitHub"/>
                     <p>GitHub</p>
                 </div>
                 <div className="icones">
-                    <img className="html" src="imagens/HTML.svg" alt="HTML"/>
+                    <img id='imagem-icones' className="html" src="imagens/HTML.svg" alt="HTML"/>
                     <p>HTML</p>
                 </div>
                 <div className="icones">
-                    <img className="css" src="imagens/CSS.svg" alt="CSS"/>
+                    <img id='imagem-icones' className="css" src="imagens/CSS.svg" alt="CSS"/>
                     <p>CSS</p>
                 </div>
                 <div className="icones">
-                    <img className="javascript" src="imagens/JavaScript.svg" alt="JavaScript"/>
+                    <img id='imagem-icones' className="javascript" src="imagens/JavaScript.svg" alt="JavaScript"/>
                     <p>Javascript</p>
                 </div>
                 <div className="icones">
-                    <img className="react" src="imagens/React.svg" alt="React"/>
+                    <img id='imagem-icones' className="react" src="imagens/React.svg" alt="React"/>
                     <p>React</p>
                 </div>
                 <div className="icones">
-                    <img className="node" src="imagens/Node.js.svg" alt="Node.js"/>
+                    <img id='imagem-icones' className="node" src="imagens/Node.js.svg" alt="Node.js"/>
                     <p>Node.js</p>
                 </div>
             </div>
@@ -118,8 +118,9 @@ const parent = {
             </div>
             <div className="linha1">
                     <div className="projetos">
-                        <img className="exibicao" src='imagens/cep.png'/>
+                        <img className="exibicao" src='imagens/Cep.png'/>
                         <div>
+                        <div className='redirecionamento'>
                         <button className="abrir-projeto" onClick={(event) => AbrirProjeto(event, '/cep')}><strong>API Via Cep</strong></button>
                         <motion.button variants={parent} 
                         initial="variantA" 
@@ -132,6 +133,7 @@ const parent = {
                         >
                         <strong>ver</strong>
                         </motion.button>
+                        </div>
                         {video && (
                             <iframe className='video-frame'
                             src='https://www.youtube.com/embed/SKbb19nE7-M?autoplay=1&mute=1'
@@ -143,6 +145,7 @@ const parent = {
                 <div className="projetos">
                     <img src='imagens/login.png' className="exibicao"/>
                     <div>
+                    <div className='redirecionamento'>
                     <button className="abrir-projeto" onClick={(event) => AbrirProjeto(event, '/login')}><strong>Login Page</strong></button>
                         <motion.button variants={parent} 
                         initial="variantA" 
@@ -155,6 +158,7 @@ const parent = {
                         >
                         <strong>ver</strong>
                         </motion.button>
+                        </div>
                         {video2 && (
                             <iframe className='video-frame'
                             src='https://www.youtube.com/embed/LH1kJELF63k?autoplay=1&mute=1'
@@ -166,6 +170,7 @@ const parent = {
                 <div className="projetos">
                     <img src="imagens/todolist.jpeg" className="exibicao"/>
                     <div>
+                    <div className='redirecionamento'>
                     <button className="abrir-projeto" onClick={(event) => AbrirProjeto(event, '/tarefas')}><strong>To Do List</strong></button>
                         <motion.button variants={parent} 
                         initial="variantA" 
@@ -178,6 +183,7 @@ const parent = {
                         >
                         <strong>ver</strong>
                         </motion.button>
+                        </div>
                         {video3 && (
                             <iframe className='video-frame'
                             src='https://www.youtube.com/embed/gg4VjYrHG4k?autoplay=1&mute=1'
@@ -188,7 +194,7 @@ const parent = {
                 </div>
             </div>
         </div>
-        </section>
+        </section> 
         <section id='serviços'>
         <div className="tela3">
             <div className="caixaTexto">
@@ -217,36 +223,39 @@ const parent = {
         <section id='contato'>
         <div className="tela4">
             <div className="caixaTexto2">
-                <p className="contato">Contato</p>
                 <b>Gostou do meu trabalho?</b>
                 <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
             </div>
             <a href="https://www.linkedin.com/in/p%C3%A2mela-%C3%A9velim">
                 <motion.div variants={parent} initial="variantA" whileHover="variantB" className="icones">
-                    <img className='redes-sociais' src="imagens/LinkedinLogo.png" alt='Linkedin'/>
-                    <p>Linkedin</p>
+                   <div className="redirecionamento">
+                    <img src="imagens/LinkedinLogo.png" alt='Linkedin'/>
                     <img className="linkedin" src="imagens/ArrowUpRight.png" alt='Ícone de seta'/>
+                    </div>
                 </motion.div>
                 </a>
             <a href="https://www.instagram.com/p.evelim_/">
                 <motion.div variants={parent} initial="variantA" whileHover="variantB" className="icones">
-                    <img className='redes-sociais' src="imagens/InstagramLogo.png" alt='Instagram'/>
-                    <p>Instagram</p>
+                <div className="redirecionamento">
+                    <img src="imagens/InstagramLogo.png" alt='Instagram'/>
                     <img className="instagram" src="imagens/ArrowUpRight.png" alt='Ícone de seta'/>
+                    </div>
                 </motion.div>
                 </a>
             <a href="https://github.com/pamelaevelim">
                 <motion.div variants={parent} initial="variantA" whileHover="variantB" className="icones">
-                    <img className='redes-sociais' src="imagens/GithubLogo.png" alt='GitHub'/>
-                    <p>GitHub</p>
+                <div className="redirecionamento">
+                    <img src="imagens/GithubLogo.png" alt='GitHub'/>
                     <img className="github" src="imagens/ArrowUpRight.png" alt='Ícone de seta'/>
+                    </div>
                 </motion.div>
             </a>
             <a href="mailto:pamelaevelim7@gmail.com">
                 <motion.div variants={parent} initial="variantA" whileHover="variantB" className="icones">
-                    <img className='redes-sociais' src="imagens/EnvelopeSimple.png" alt='E-mail'/>
-                    <p>E-mail</p>
+                <div className="redirecionamento">
+                    <img src="imagens/EnvelopeSimple.png" alt='E-mail'/>
                     <img className="github" src="imagens/ArrowUpRight.png" alt='Ícone de seta'/>
+                    </div>
                 </motion.div>
             </a>
     </div>
