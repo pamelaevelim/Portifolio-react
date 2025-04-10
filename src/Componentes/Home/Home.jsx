@@ -66,8 +66,8 @@ const parent = {
       </motion.button>
       </nav>
       <div id='home' className="tela1"> 
-            <img className="perfil" src="imagens/perfil.png" alt="Perfil"/>
             <div className="apresentacao">
+            <img className="perfil" src="imagens/perfil.png" alt="Perfil"/>
               <p className="ola">
                 Hellow Word! Meu nome é <b>Pâmela Évelim</b> e sou
               </p>
@@ -79,27 +79,27 @@ const parent = {
               </p>
             </div>
             <div className="barraIcones">
-                <div className="icones">
+                <div id="icones">
                     <img id='imagem-icones' className="GitHub" src="imagens/GitHub.svg" alt="GitHub"/>
                     <p>GitHub</p>
                 </div>
-                <div className="icones">
+                <div id="icones">
                     <img id='imagem-icones' className="html" src="imagens/HTML.svg" alt="HTML"/>
                     <p>HTML</p>
                 </div>
-                <div className="icones">
+                <div id="icones">
                     <img id='imagem-icones' className="css" src="imagens/CSS.svg" alt="CSS"/>
                     <p>CSS</p>
                 </div>
-                <div className="icones">
+                <div id="icones">
                     <img id='imagem-icones' className="javascript" src="imagens/JavaScript.svg" alt="JavaScript"/>
                     <p>Javascript</p>
                 </div>
-                <div className="icones">
+                <div id="icones">
                     <img id='imagem-icones' className="react" src="imagens/React.svg" alt="React"/>
                     <p>React</p>
                 </div>
-                <div className="icones">
+                <div id="icones">
                     <img id='imagem-icones' className="node" src="imagens/Node.js.svg" alt="Node.js"/>
                     <p>Node.js</p>
                 </div>
@@ -116,7 +116,7 @@ const parent = {
             transition={{ duration: 2.5, repeat: Infinity, repeatType: "loop", ease: "easeInOut"}}>Meu trabalho</motion.p>
             <b>Veja os projetos em destaque</b>
             </div>
-            <div className="linha1">
+            <div className="linha">
                     <div className="projetos">
                         <img className="exibicao" src='imagens/Cep.png'/>
                         <div>
