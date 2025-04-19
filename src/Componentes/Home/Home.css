@@ -253,6 +253,10 @@
   flex-direction: column;
   gap: 20px;
 }
+
+.dark-mode .tela4 {
+  background-image: url('/imagens/bgmobile.png');
+}
 }
 
 @media (min-width: 950px) {
@@ -281,6 +285,10 @@
     margin-top: -50vh !important;
     border-radius: 10px !important;
   }
+
+  .dark-mode .tela4 {
+  background-image: url('/imagens/bg2.png');
+}
 }
 
 .dark-mode .tela2 {
@@ -499,7 +507,6 @@ p {
 }
 
 .dark-mode .tela4 {
-  background-image: url('/imagens/bg2.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -580,7 +587,7 @@ p {
 }
 
 .dark-mode .tela5 {
-  background-image: url(imagens/bg.png);
+  background-image: url('/imagens/bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
