@@ -74,7 +74,7 @@ const parent = {
               <h1>Desenvolvedora Fullstack</h1>
               <p className="paragrafo">
                 Tranformo necessidades em aplicações reais, envolventes e funcionais. Muito além do
-                código; Busco transformar ideias em produtos digitais inovadores, através de soluções que unam
+                código; busco transformar ideias em produtos digitais inovadores, através de soluções que unam
                 estética e funcionalidade.
               </p>
             </div>

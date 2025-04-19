@@ -22,7 +22,7 @@ export function ToDoList() {
       )
     )
   }
-
+  
   const removeTodo = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id))
   }

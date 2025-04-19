@@ -74,19 +74,19 @@ export function CEP() {
     <div className="container">
       <h2>Cadastro de Usuário</h2>
       <label>Nome: </label>
-      <input type="text" value={nome} onChange={(event) => setNome(event.target.value)} />
+      <input className='campo' type="text" value={nome} onChange={(event) => setNome(event.target.value)} />
       <label>E-mail: </label>
-      <input type="text" value={email} onChange={(event) => setEmail(event.target.value)} />
+      <input className='campo' type="text" value={email} onChange={(event) => setEmail(event.target.value)} />
       <label>CEP: </label>
-      <input type="text" value={cep} onChange={(event) => pesquisarCep(event.target.value)} />
+      <input className='campo' type="text" value={cep} onChange={(event) => pesquisarCep(event.target.value)} />
       <label>Rua: </label>
-      <input type="text" value={rua} onChange={(event) => setRua(event.target.value)}/>
+      <input className='campo' type="text" value={rua} onChange={(event) => setRua(event.target.value)}/>
       <label>Bairro: </label>
-      <input type="text" value={bairro} onChange={(event) => setBairro(event.target.value)}/>
+      <input className='campo' type="text" value={bairro} onChange={(event) => setBairro(event.target.value)}/>
       <label>Cidade: </label>
-      <input type="text" value={cidade} onChange={(event) => setCidade(event.target.value)}/>
+      <input className='campo' type="text" value={cidade} onChange={(event) => setCidade(event.target.value)}/>
       <label>Estado: </label>
-      <input type="text" value={estado} onChange={(event) => setEstado(event.target.value)}/>
+      <input className='campo' type="text" value={estado} onChange={(event) => setEstado(event.target.value)}/>
       <button onClick={handleCadastro}>Cadastrar</button>
     </div>
     </>

@@ -15,23 +15,20 @@
     background-image: url('/imagens/bgtodolist.jpg');
     background-size: cover;
   }
-  
+
   header {
     width: 100vw;
     height: 12vh;
     background: rgba(245, 205, 25, 0.763);
     display: flex;
     justify-content: center;
-  
+
     h1 {
-      margin-top: 20px;
-      font-size: 100px;
       font-family: Georgia, 'Times New Roman', Times, serif;
     }
   }
   
   .todo-app {
-    min-width: 400px;
     max-width: fit-content;
     display: flex;
     flex-direction: column;
@@ -41,7 +38,6 @@
     border-radius: 15px;
     position: relative;
     top: 15vh;
-    left: 40vw;
   }
   
   .botao {
@@ -67,15 +63,13 @@
     pointer-events: none;
     font-size: 15px;
   }
-  
+
   input {
-    width: 300px;
-    height: 30px;
     padding: 5px 8px;
     border-radius: 10px;
     border: solid 0.5px rgba(0, 0, 0, 0.249);
   }
-  
+
   form {
     display: flex;
     flex-direction: row;
@@ -86,16 +80,15 @@
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
   }
-  
+
   .todo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
     border-bottom: solid 1px #221f1f;
     transition: .3s;
   }
-  
+
   .bloco {
     display: flex;
     flex-direction: column;
@@ -110,26 +103,97 @@
   .bloco3 {
     display: flex;
     gap: 5px;
-    margin-top: -25px;
-    margin-left: 10px;
   }
   
   .todo.done h3 {
     text-decoration: line-through;
     text-decoration-color: rgba(0, 0, 0, 0.803);
   }
-    
 
   .voltar {
-    width: 30px;
-    height: 30px;
     border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.923);
     position: relative;
+  }
+
+  @media (min-width: 400px) {
+  
+  header {
+  
+    h1 {
+      font-size: 100px;
+      margin-top: 20px;
+    }
+  }
+
+  .todo {
+    padding: 25px;
+  }
+
+  .todo-app {
+    min-width: 400px;
+    left: 40vw;
+  }
+  
+  input {
+    width: 300px;
+    height: 30px;
+  }
+
+  .voltar {
+    width: 30px;
+    height: 30px;
     top: 10vh;
     left: 25vw;
   }
+
+  .bloco3 {
+    margin-top: -25px;
+  }
+
+}
   
+@media (max-width: 400px) {
+  
+  header {
+  
+    h1 {
+      font-size: 14vw;
+      margin-top: 50px;
+    }
+  }
+
+  .todo {
+    padding: 12px 5px;
+    font-size: 3vw;
+  }
+
+  .todo-app {
+    min-width: 70vw;
+    width: auto;
+    max-width: 90vw;
+    left: 5vw;
+  }
+  
+  input {
+    width: auto;
+    height: 25px;
+  }
+
+  .voltar {
+    width: 20px;
+    height: 20px;
+    top: 16vh;
+  }
+
+  .bloco {
+    font-size: 5vw;
+  }
+
+  .bloco3 {
+    margin-top: -20px;
+  }
+} 

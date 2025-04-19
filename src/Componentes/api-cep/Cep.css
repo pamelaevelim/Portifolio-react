@@ -55,3 +55,54 @@
     font-size: 40px;
     padding: 10px;
   }
+
+  @media (max-width: 400px) {
+
+    .home {
+      width: 20px;
+      height: 20px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.923);
+      position: relative;
+      top: 4vh;
+      left: 75vw;
+    }
+    
+    .container {
+      width: 80vw;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      border-radius: 8px;
+      gap: 5px;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+      margin-top: 10vh;
+    }
+    
+    .campo {
+      width: 95%;
+      padding: 5px;
+    }
+    
+    button {
+      width: 22vw;
+      font-size: 10px;
+      color: white;
+      background-color: rgb(36, 36, 244);
+      border: none;
+      border-radius: 2px;
+      padding: 5px;
+    }
+    
+    h2 {
+      text-align: center;
+      width: 100%;
+      font-size: 18px;
+      padding: 10px;
+    }
+  
+  }
