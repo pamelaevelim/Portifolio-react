@@ -69,7 +69,7 @@ const parent = {
             <div className="apresentacao">
             <img className="perfil" src="imagens/perfil.png" alt="Perfil"/>
               <p className="ola">
-                Hellow Word! Meu nome é <b>Pâmela Évelim</b> e sou
+                Hello Word! Meu nome é <b>Pâmela Évelim</b> e sou
               </p>
               <h1>Desenvolvedora Fullstack</h1>
               <p className="paragrafo">
