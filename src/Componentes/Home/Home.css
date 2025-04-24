@@ -53,7 +53,7 @@
   }
 
   .light-mode nav {
-    background-color: var(--gray-500);
+    background-color: var(--gray-600);
 
     a {
       color: black;
@@ -86,7 +86,11 @@
   }
 
   .light-mode .tela1 {
-    background-color: var(--gray-500);
+    background-color: var(--gray-600);
+  }
+
+  .seta {
+    padding: 10px 10px 40px;
   }
 
   .tela1 {
@@ -303,7 +307,7 @@
 }
 
 .light-mode .tela2 {
-  background-color: var(--gray-500);
+  background-color: var(--gray-600);
 
   .trabalho {
     color: #880499;
@@ -411,7 +415,20 @@ p {
 }
 
 .light-mode .tela3 {
-  background-color: var(--gray-300);
+  background-color: var(--gray-500);
+
+  b {
+      color: black;
+  }
+
+  .servicos {
+    color: #880499;
+    font-family: Inconsolata;
+  }
+
+   p {
+    color: black;
+  }
 }
 
 .ajuda {
@@ -499,7 +516,7 @@ p {
 }
 
 .light-mode .tela4 {
-  background-color: var(--gray-500);
+  background-color: var(--gray-600);
 
   .icones {
     background-color: var(--gray-200);
@@ -614,7 +631,7 @@ p {
 }
 
 .light-mode .tela5 {
-  background-color: var(--gray-500);
+  background-color: var(--gray-600);
 
   h1 {
     color: var(--gray-200);
@@ -627,7 +644,7 @@ p {
 
   input {
     border: rgba(81, 79, 79, 0.7) 1px solid;
-    background-color: var(--gray-500);
+    background-color: var(--gray-600);
   }
 
   button {

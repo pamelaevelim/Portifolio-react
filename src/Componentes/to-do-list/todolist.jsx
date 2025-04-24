@@ -65,7 +65,7 @@ export function ToDoList() {
   const navigate = useNavigate()
 
   function inicio() {
-    navigate('/')
+    navigate('/#projetos')
   }
 
   return (

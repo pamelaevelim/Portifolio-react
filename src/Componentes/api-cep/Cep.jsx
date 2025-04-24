@@ -16,7 +16,7 @@ export function CEP() {
   const [estado, setEstado]= useState('')
 
   function inicio() {
-    navigate('/')
+    navigate('/#projetos')
   }
   
   function LimparCampos() {

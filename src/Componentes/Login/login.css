@@ -254,8 +254,8 @@ h1 {
 @media (max-width: 768px) {
 
     .Home {
-        width: 5%;
-        height: 3%;
+        width: 20px;
+        height: 15px;
         border-radius: 6px;
         display: flex;
         align-items: center;

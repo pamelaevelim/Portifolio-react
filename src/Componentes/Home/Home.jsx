@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import	{ Sun, Moon } from "lucide-react"
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
@@ -6,6 +7,17 @@ import './Home.css'
 
 
 export function Home() {
+
+const localizacao = useLocation()
+
+useEffect(() => {
+    if (localizacao.hash === '#projetos') {
+      const secaoProjetos = document.getElementById('projetos')
+     if (secaoProjetos) {
+       secaoProjetos.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+}, [localizacao])
 
 const navigate = useNavigate()
 
@@ -104,10 +116,12 @@ const parent = {
                     <p>Node.js</p>
                 </div>
             </div>
+            <a href="#projetos">
             <motion.img className='seta'
             animate={{ y: [0, 10, 0]}}
             transition={{ duration: 1, repeat: Infinity}}
             src="imagens/CaretDoubleDown.png" alt='Seta para baixo'></motion.img>
+            </a>
         </div>
         <section id='projetos'>
         <div className="tela2">

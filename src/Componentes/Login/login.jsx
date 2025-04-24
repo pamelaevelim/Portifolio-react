@@ -5,6 +5,7 @@ import	{ Home } from "lucide-react"
 
 export function Login() {
 
+
     const navigate = useNavigate('')
     const [email, setEmail] = useState('')
     const [senha, setSenha] = useState('')
@@ -52,7 +53,7 @@ export function Login() {
     }
 
     function inicio() {
-        navigate('/')
+        navigate('/#projetos')
       }
 
     return (
