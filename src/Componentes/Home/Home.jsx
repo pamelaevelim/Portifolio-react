@@ -79,7 +79,7 @@ const parent = {
       </nav>
       <div id='home' className="tela1"> 
             <div className="apresentacao">
-            <img className="perfil" src="imagens/perfil.png" alt="Perfil"/>
+            <img className="perfil" src="imagens/perfil01.jpeg" alt="Perfil"/>
               <p className="ola">
                 Hello Word! Meu nome é <b>Pâmela Évelim</b> e sou
               </p>
